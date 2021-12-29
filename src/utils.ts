@@ -62,6 +62,7 @@ const AQITablePM25 = {
 
 /** Get the upper and lower bounds of particle concentration for corresponding AQI */
 function getBreakpoints (AQI: number) {
+  // eslint-disable-next-line
   const breakpoints = AQITablePM25.concentrations.find(function (conc) {
     if (conc.index.min <= AQI && conc.index.max > AQI) {
       return conc
