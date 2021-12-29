@@ -65,7 +65,7 @@ class App extends React.Component<
       <div className='App'>
         <br />
         <br />
-        <Header as='h1'>AQI to Cigarettes Calculator</Header>
+        <Header as='h1'>AQI Calc</Header>
         <br />
         <br />
         <p>
@@ -106,23 +106,7 @@ class App extends React.Component<
           <div id='info'>
             <br />
             <hr></hr>
-            <Header>How does this work?</Header>
-            <p>
-              <b>Step 1</b>: I converted AQI back to PM 2.5 particle
-              concentration. That's the number of particles in the air that are
-              a certain size. For this operation I used the same equation as <a href='https://www.airnow.gov/aqi/aqi-calculator/'>
-                the Air Now calculator
-              </a>
-              .
-            </p>
-            <p>
-              <b>Step 2</b>: based on <a href='http://berkeleyearth.org/archive/air-pollution-and-cigarette-equivalence/'>this research</a>, the health impact of a particle concentration of 22μg/m3 per 24 hours is equivalent to about 1 cigarette. I divided the
-              concentration from step 1 by 22 and 24, then multiplied by the
-              number of hours exposed. This isn't going to be
-              completely accurate since some kinds of air pollution are worse
-              (wood smoke is apparently not as bad for you, for example) and I'm
-              sure cigarettes vary in lethality. Note that I am looking at <i>impact to health</i>, not particles inhaled.
-            </p>
+
             <p>
               You'll notice the results are slightly off from what the
               researchers got. That's because when you convert particle density
