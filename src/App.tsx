@@ -3,6 +3,7 @@ import './App.css'
 import 'semantic-ui-react'
 import { calcPM25 } from './utils'
 import { Container, Header, Input, Button } from 'semantic-ui-react'
+import DarkMode from './darkmode'
 
 class App extends React.Component<
   {},
@@ -65,9 +66,11 @@ class App extends React.Component<
       <div className='App'>
         <br />
         <br />
+       
         <Header as='h1'>AQI Calc</Header>
         <br />
         <br />
+        <DarkMode/>
         <p>
           Input the Air Quality Index (AQI) where you live and how many hours
           you've been exposed. The calculator will tell you what the impact to
