@@ -64,13 +64,14 @@ class App extends React.Component<
 
     return (
       <div className='App'>
-        <br />
-        <br />
        
-        <Header as='h1'>AQI Calc</Header>
         <br />
         <br />
         <DarkMode/>
+        <Header as='h1'>AQI Calc</Header>
+        <br />
+        <br />
+       
         <p>
           Input the Air Quality Index (AQI) where you live and how many hours
           you've been exposed. The calculator will tell you what the impact to
